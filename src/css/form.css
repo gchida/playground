@@ -1,0 +1,25 @@
+input, button {
+  margin: 5px;
+  font-size: 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+  border: 1px solid #888;
+  border-radius: 3px;
+  width: 210px;
+}
+
+button {
+  background-color: #B1CC89;
+  color: #333;
+}
+
+textarea {
+  height: 80px;
+  width: 210px;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
