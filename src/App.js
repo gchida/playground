@@ -119,15 +119,10 @@ class App extends React.Component {
 
     return (
       <div className="app">
-        <h1>todoアプリを作ってみた</h1>
+        <h1>To Do List !</h1>
         <h2>
           完了：{this.state.countDone}　　残り：{undoneNum}
         </h2>
-        <h3>
-          Lv. {this.state.level}　(次のレベルまで{Math.round(
-            this.state.nextLevel
-          )})
-        </h3>
         <Form onSubmit={this.handleSubmit.bind(this)} />
         <TodoList
           todos={this.state.todos}
