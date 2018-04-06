@@ -8,8 +8,8 @@ export default class from extends Component {
     const todoDelete = this.props.done ? "削除" : "";
     return (
       <li className={className}>
-        <span className="undone-content">{this.props.countTodo}</span>
-        <span className="undone-content">：{this.props.title}　　</span>
+        <span>{this.props.countTodo}</span>
+        <span>：{this.props.title}　　</span>
         <a
           href=""
           onClick={e => {
