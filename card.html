@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>card</title>
+  </head>
+  <body>
+    <object id="svg-fig" data="gemcook.svg" type="image/svg+xml" width="400" height="300"></object>
+      <input type="text" id="color" name="input">
+      <button type="button" id='btn' name="button">変更</button>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type="text/javascript">
+      window.onload = function() {
+  var obj = document.getElementById('svg-fig').contentDocument;
+  $obj_jquery = $(obj);
+  $gemuo_back = obj_jquery.find('.st0')[0];
+  var btn = document.getElementByTagName('button')[0];
+};
+
+$('#btn').click(function() {
+  var color = $('color_input').val();
+  // if(color.match(/^#[A-Za-z0-9_]*$/)){
+  $gemuo_back.style.fill = color;
+  // }else{
+  // alert('おい')};
+});
+</script>
+  </body>
+</html>
